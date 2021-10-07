@@ -1,0 +1,13 @@
+.footer{
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1) 100%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
