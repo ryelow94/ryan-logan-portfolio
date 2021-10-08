@@ -12,7 +12,7 @@ export const portfolioItems = [
     {
         title: "Cookbook",
         img: cookBookImg,
-        description: " This app allows the user to enter ingredients and/or intolerances into the search bar and view a list of recipes including ingredients entered and exscluding intolerances entered",
+        description: " This app allows the user to enter ingredients and/or intolerances into the search bar and view a list of recipes including ingredients entered and excluding intolerances entered",
         github: "https://github.com/ryelow94/Cookbook",
         deployed: "https://ryelow94.github.io/Cookbook/",
         cName: "portfolio-items"

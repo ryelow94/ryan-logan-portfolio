@@ -17,7 +17,7 @@ class Portfolio extends Component {
                   <br></br>
                   <p>{item.description}</p>
                   <br></br>
-                  <a href={item.github}>Github</a>
+                  <a href={item.github}>Github Repository</a>
                   <br></br>
                   <a href={item.deployed}>Deployed Page</a>
                 </article>

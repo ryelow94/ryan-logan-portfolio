@@ -1,13 +1,12 @@
-import React, { Component} from "react";
-// import { Router } from "react-router";
+import React, { Component } from "react";
 import { MenuItems } from "./MenuItem";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 class Navbar extends Component {
   state = { clicked: false };
   handleClick = () => {
-      this.setState({clicked: !this.state.clicked})
-  }
+    this.setState({ clicked: !this.state.clicked });
+  };
   render() {
     return (
       <nav className="NavbarItems">
@@ -17,17 +16,14 @@ class Navbar extends Component {
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
           ></i>
         </div>
-        <ul className = {this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((_item_, _index_) => {
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+          {MenuItems.map((item, index) => {
             return (
-              <Link to={_item_.link} className={_item_.cName}>
-                  {_item_.title}
-                </Link>
-              // <li key={index}>_
-              //   <a className={item.cName} href={item.link}>_
-              //     {item.title}_
-              //   </a>_
-              // </li>_
+              <li key ={index} className={item.cName}>
+              <Link  to={item.link}>
+                {item.title}
+              </Link>
+              </li>
             );
           })}
         </ul>
