@@ -12,7 +12,7 @@ const App = () => {
   const pages = ['about', 'portfolio', 'contact'];
   const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
-    <Router>
+    <Router basename="/react-portfolio">
       <div className="App">
         <Navbar pages={pages}
           currentPage={currentPage}
