@@ -12,21 +12,25 @@ const App = () => {
   const pages = ['about', 'portfolio', 'contact'];
   const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
-    <Router basename="/react-portfolio">
+    <Router>
       <div className="App">
         <Navbar pages={pages}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage} />
         <main>
           <Switch>
-            <Route exact path="/" component = {About} />
-            <Route exact path="/about-me" component={About} />
-            <Route
-              exact
-              path="/portfolio"
-              component={Portfolio}
-            />
-            <Route exact path="/contact" component = {ContactForm} />
+            <Route exact path="/">
+              <About/>
+            </Route>
+            <Route exact path="/about-me">
+              <About/>
+              </Route>
+            <Route exact path="/portfolio">
+              <Portfolio/>
+              </ Route>
+            <Route exact path="/contact">
+            <ContactForm/>
+            </Route>
           </Switch>
         </main>
         <Footer />
