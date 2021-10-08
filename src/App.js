@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
+import {BrowserRouter as Switch, Route} from "react-router-dom"
 import ContactForm from "./components/ContactForm";
 
 const App = () => {
