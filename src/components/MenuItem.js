@@ -1,17 +1,17 @@
 export const MenuItems = [
     {
         title: "About Me",
-        link: "/about-me",
+        link: "/react-portfolio/about-me",
         cName: "nav-links"
     },
     {
         title: "Portfolio",
-        link: "/portfolio",
+        link: "/react-portfolio/portfolio",
         cName: "nav-links"
     },
     {
         title: "Contact",
-        link: "/contact",
+        link: "/react-portfolio/contact",
         cName: "nav-links"
     },
     {
