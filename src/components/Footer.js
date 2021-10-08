@@ -13,6 +13,8 @@ const Footer = () => (
             <a href={item.github}>Github</a>
             <br></br>
             <a href={item.linkedIn}>LinkedIn</a>
+            <br></br>
+            <a href={item.facebook}>Facebook</a>
           </div>
         );
       })}
