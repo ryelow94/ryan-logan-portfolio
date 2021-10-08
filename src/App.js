@@ -1,31 +1,32 @@
 import React from "react";
+// import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import { HashRouter as Router } from "react-router-dom";
-import { BrowserRouter as Switch, Route} from "react-router-dom"
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContactForm from "./components/ContactForm";
-
 const App = () => {
+  // const pages = ["about", "portfolio", "contact"];_
+  // const [currentPage, setCurrentPage] = useState(pages[0]);_
   return (
     <Router >
       <div className="App">
-        <Navbar/>
+        <Navbar
+        />
         <main>
           <Switch>
-            <Route  exact path="/about-me">
+            <Route exact path="/">
               <About />
             </Route>
-            <Route  exact path="/about-me">
+            <Route exact path="/about-me">
               <About />
             </Route>
-            <Route  exact path="/portfolio">
+            <Route exact path="/portfolio">
               <Portfolio />
             </Route>
-            <Route  exact path="/contact">
+            <Route exact path="/contact">
               <ContactForm />
             </Route>
           </Switch>
@@ -35,5 +36,7 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;
+
+
+
