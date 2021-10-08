@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react"
+import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
@@ -9,27 +9,29 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContactForm from "./components/ContactForm";
 
 const App = () => {
-  const pages = ['about', 'portfolio', 'contact'];
+  const pages = ["about", "portfolio", "contact"];
   const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
-    <Router>
+    <Router >
       <div className="App">
-        <Navbar pages={pages}
+        <Navbar
+          pages={pages}
           currentPage={currentPage}
-          setCurrentPage={setCurrentPage} />
+          setCurrentPage={setCurrentPage}
+        />
         <main>
           <Switch>
             <Route exact path="/">
-              <About/>
+              <About />
             </Route>
             <Route exact path="/about-me">
-              <About/>
-              </Route>
+              <About />
+            </Route>
             <Route exact path="/portfolio">
-              <Portfolio/>
-              </ Route>
+              <Portfolio />
+            </Route>
             <Route exact path="/contact">
-            <ContactForm/>
+              <ContactForm />
             </Route>
           </Switch>
         </main>
