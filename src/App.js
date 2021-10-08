@@ -4,7 +4,9 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Switch, Route} from "react-router-dom"
+
 import ContactForm from "./components/ContactForm";
 
 const App = () => {
@@ -14,16 +16,16 @@ const App = () => {
         <Navbar/>
         <main>
           <Switch>
-            <Route  exact path="/react-portfolio/about-me">
+            <Route  exact path="/about-me">
               <About />
             </Route>
-            <Route  exact path="/react-portfolio/about-me">
+            <Route  exact path="/about-me">
               <About />
             </Route>
-            <Route  exact path="/react-portfolio/portfolio">
+            <Route  exact path="/portfolio">
               <Portfolio />
             </Route>
-            <Route  exact path="/react-portfolio/contact">
+            <Route  exact path="/contact">
               <ContactForm />
             </Route>
           </Switch>
