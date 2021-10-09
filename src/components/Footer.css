@@ -7,7 +7,15 @@
     width: 100%;
   }
 
-  a {
-    color: white;
-    text-decoration: none;
+  .footer-link {
+    color: white
   }
+
+  .footer-link:hover {
+    background-color: #6d76f7;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+ 
+
+  

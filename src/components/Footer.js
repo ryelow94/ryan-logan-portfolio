@@ -10,11 +10,11 @@ const Footer = () => (
           <div key={index}>
             <h3>{item.title}</h3>
             <br></br>
-            <a href={item.github}>Github</a>
+            <a className="footer-link" href={item.github}>Github</a>
             <br></br>
-            <a href={item.linkedIn}>LinkedIn</a>
+            <a className="footer-link" href={item.linkedIn}>LinkedIn</a>
             <br></br>
-            <a href={item.facebook}>Facebook</a>
+            <a className="footer-link" href={item.facebook}>Facebook</a>
           </div>
         );
       })}

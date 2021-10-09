@@ -16,7 +16,7 @@ export const MenuItems = [
     },
     {
         title: "Resume",
-        link: "https://drive.google.com/file/d/1csU4AShqqGqMqqefh_Ax129IFnjZ5oQ5/view?usp=sharing",
+        link: "/resume",
         cName: "nav-links"
     },
 ]
