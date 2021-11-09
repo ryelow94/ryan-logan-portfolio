@@ -8,7 +8,9 @@
   }
 
   .footer-link {
-    color: white
+    color: white;
+    flex-direction: row;
+    margin: auto
   }
 
   .footer-link:hover {
@@ -16,6 +18,17 @@
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
+  .footer-div {
+    display:flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 960px) {
+    .footer-link {
+    color: white;
+    flex-direction: row;
+    margin: auto;
+  }
+}
  
 
   

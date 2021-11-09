@@ -7,7 +7,7 @@ const Footer = () => (
     <div>
       {footerItems.map((item, index) => {
         return (
-          <div key={index}>
+          <div className="footer-div" key={index}>
             <h3>{item.title}</h3>
             <br></br>
             <a className="footer-link" href={item.github}>Github</a>
