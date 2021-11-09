@@ -1,10 +1,19 @@
 import cookBookImg from "./cookbook.png"
 import smsImg from "./sms.png"
+import TetrisImg from "./Tetris.png"
 import fitnessTracker from "./fitness-tracker.png"
 import workDayScheduler from "./work-day-scheduler.png"
 import noteTaker from "./note-taker.png"
 import passwordGenerator from "./password-generator.png"
 export const portfolioItems = [
+    {
+        title: "Tetris",
+        img: TetrisImg,
+        description: " Our take on Tetris!",
+        github: "https://github.com/reidk361/arcade-lite",
+        deployed: "https://arcade-lite.herokuapp.com/",
+        cName: "portfolio-items",
+    },
     {
         title: "SMS Practice Reminder",
         img: smsImg,
