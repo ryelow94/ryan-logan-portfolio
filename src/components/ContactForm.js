@@ -60,8 +60,7 @@ function ContactForm() {
         <div>
         {formik.errors.subject ? <div className="required-field">{formik.errors.subject}</div> : null}
           <label htmlFor="subject">Subject </label>
-          <input type="text" name="subject" id="subject" value={formik.values.subject} onChange={formik.handleChange}>
-          </input>
+          <input type="text" name="subject" id="subject" value={formik.values.subject} onChange={formik.handleChange}/>
           {formik.errors.name ? <div className="required-field">{formik.errors.name}</div> : null}
           <label>Name </label>
           <input type="text" id="name" name="name" value={formik.values.name} onChange={formik.handleChange} />
