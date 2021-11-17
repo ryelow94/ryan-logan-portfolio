@@ -62,15 +62,15 @@ function ContactForm() {
           <label htmlFor="subject">Subject </label>
           <input type="text" name="subject" id="subject" value={formik.values.subject} onChange={formik.handleChange}/>
           {formik.errors.name ? <div className="required-field">{formik.errors.name}</div> : null}
-          <label>Name </label>
+          <label htmlFor="name">Name </label>
           <input type="text" id="name" name="name" value={formik.values.name} onChange={formik.handleChange} />
           {formik.errors.email ? <div className="required-field"> {formik.errors.email}</div> : null}
-          <label>Email </label>
+          <label htmlFor="email">Email </label>
           <input type="text" id="email" name="email" value={formik.values.email} onChange={formik.handleChange}/>
-          <label>Phone</label>
+          <label htmlFor="phone">Phone</label>
           <input type="text" placeholder="1 (111) 111-1111" id="phone" name="phone" value={formik.values.phone} onChange={formik.handleChange}/>
           {formik.errors.message ? <div className="required-field">{formik.errors.message}</div> : null}
-          <label>Message </label>
+          <label htmlFor="message">Message </label>
           <textarea type="text" id="message" name="message" value={formik.values.message} onChange={formik.handleChange} />
           {formik.errors.subject ||formik.errors.name || formik.errors.email || formik.errors.message ? <div className="required-field"> All required fields must be entered before submitting</div> : null}
           <br></br>

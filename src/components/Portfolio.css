@@ -16,6 +16,7 @@
     display: grid;
     grid-template-rows: max-content 200px 1fr;
     padding-bottom: 20px;
+
 }
 
 .card a {
@@ -30,5 +31,7 @@
 .card img {
     object-fit: contain;
     width: 100%;
-    height: 100%;
+    height: 100%; 
+    filter: drop-shadow(0 0 0.25rem black);
+    padding: 1rem
 }
