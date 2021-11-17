@@ -15,7 +15,7 @@ const App = () => {
         />
         <main>
           <Switch>
-            <Route exact path="/react-portfolio">
+            <Route exact path="/ryan-logan-portfolio">
               <About />
             </Route>
             <Route exact path="/about-me">
