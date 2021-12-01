@@ -1,4 +1,6 @@
-.about-text {
+
+@media screen and (max-width: 960px) {
+    .portfolio-photo, .about-text {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     grid-gap: 20px;
@@ -12,14 +14,18 @@
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-    
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
 }
 
 .about-div {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+.portfolio-photo{
+  
 }
 
     
