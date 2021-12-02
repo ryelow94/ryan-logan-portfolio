@@ -49,7 +49,7 @@ export const portfolioItems = [
     {
         title: "Note Taker",
         img: noteTaker,
-        description: "This app allows the user to write, save and delete notes that they enter into the webpage. The app also allows the user to refer back to the saved notes and read them. This app uses and express server to store the data the user enters.",
+        description: "This app allows the user to write, save and delete notes that they enter into the webpage. The app also allows the user to refer back to the saved notes and read them.",
         github: "https://github.com/ryelow94/Note-Taker",
         deployed: "https://note-taker94.herokuapp.com/",
         cName: "portfolio-items"
