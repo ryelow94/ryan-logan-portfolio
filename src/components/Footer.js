@@ -15,6 +15,8 @@ const Footer = () => (
             <a className="footer-link" href={item.linkedIn}>LinkedIn</a>
             <br></br>
             <a className="footer-link" href={item.facebook}>Facebook</a>
+            <br></br>
+            <a className="footer-link" href={item.email}>Email</a>
           </div>
         );
       })}
