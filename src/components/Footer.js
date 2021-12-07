@@ -16,7 +16,7 @@ const Footer = () => (
             <br></br>
             <a className="footer-link" href={item.facebook}>Facebook</a>
             <br></br>
-            <a className="footer-link" href={item.email}>Email</a>
+            <a className="footer-link" href="mailto: ryelow94@gmail.com">Email</a>
           </div>
         );
       })}
